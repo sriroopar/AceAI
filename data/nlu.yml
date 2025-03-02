@@ -46,6 +46,54 @@ nlu:
     - never
     - I don't think so
     - don't like that
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
     - no way
     - not really
 
@@ -88,6 +136,28 @@ nlu:
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: linkedin_request
+  examples: |
+    - How do I send a meaningful connection request to a recruiter at [Amazon](company)?
+    - Suggest a personalized LinkedIn message for networking with a hiring manager at [Tesla](company).
+    - What should I say when connecting with a [Software Engineer](job_title) at [Netflix](company)?
+    - Can you draft a thoughtful message for a [Data Engineer](job_title) at [Facebook](company)?
+    - I need a LinkedIn message that feels warm and genuine for reaching out to a [Data Analyst](job_title) at [IBM](company)?
+    - How can I approach a recruiter for a job opportunity at [Microsoft](company)?
+    - Can you help me write a follow-up message after connecting with a hiring manager at [Google](company)?
+
+- intent: resume_suggestions
+  examples: |
+    - Can you analyze my resume and suggest targeted improvements?
+    - What changes should I make to my resume for a [Product Manager](job_title) role to make it stand out?
+    - How can I make my resume more appealing for a [Software Engineer](job_title) job?
+    - Any specific tips to refine my [Data Engineer](job_title) resume to align with industry trends?
+    - What elements should I enhance in my [Data Analyst](job_title) resume to highlight my data visualization skills?
+    - Can you help me tailor my resume for a career transition into [UX Design](job_title)?
+    - How should I showcase my leadership experience on my resume?
+a bot?
     - am I talking to a human?
 
 -intent : cover_leter
