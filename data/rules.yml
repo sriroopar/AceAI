@@ -7,7 +7,17 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Generate LinkedIn Message
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - intent: linkedin_request
+    - action: action_generate_linkedin_message
+
+- rule: Provide Resume Suggestions
+  steps:
+    - intent: resume_suggestions
+    - action: action_review_resume
+
+- rule: Respond to greetings
+  steps:
+    - intent: greet
+    - action: utter_greet
